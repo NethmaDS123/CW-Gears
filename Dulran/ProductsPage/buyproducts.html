@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1"
+    />
+    <!-- Adding the poppins font package and import website icon + More icons -->
+    <title>The GEARS Store</title>
+    <link rel="icon" type="image/x-icon" href="background.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="boilerplate.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav-bar">
+      <div class="logo-container">
+        <div class="logo">GEARS</div>
+      </div>
+      <ul class="links">
+        <li><a href="../SplashPage/index.html">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="../../Infas/Sitemap.html">SiteMap</a></li>
+        <li>
+          <a href="../../Nethma/CommentsPage/comments.html">Comments</a>
+        </li>
+        <li><a href="../../Chanditha/QuizPage/index.html">Quiz</a></li>
+        <li><a href="../../Infas/Gallery.html">Gallery</a></li>
+        <li><a href="../../Chanditha/AboutUsPage/about.html">About Us</a></li>
+      </ul>
+      <p id="menu" class="hamburger">&#9776;</p>
+    </nav>
+
+    <!-- Navbar Toggle -->
+    <script>
+      let hamburger = document.querySelector("#menu");
+      let linkList = document.querySelector(".links");
+
+      hamburger.addEventListener("click", () => {
+        linkList.classList.toggle("shown");
+      });
+    </script>
+
+    <div class="themeone">
+      <br />
+      <h1 style="font-size: xxx-large" class="store">
+        Welcome to the GEARS Store!
+      </h1>
+      <br />
+      <h2 class="section-title" style="font-size: xx-large">Shop Products</h2>
+
+      <!-- Shop Content -->
+      <section class="container content-section">
+        <h2 class="section-header" style="color: burlywood">
+          <u>Gaming Accessories</u>
+        </h2>
+        <br />
+        <div class="shop-content">
+          <div class="shop-item">
+            <span class="shop-item-title">Apex Pro</span>
+            <img class="shop-item-image" src="keyboard.png" alt="" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$50</span>
+              <br />
+              <button class="finalea" type="button">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="shop-content">
+            <span class="shop-item-title">G Pro Wireless</span>
+            <img class="shop-item-image" src="mouse.png" alt="" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$20</span>
+              <br />
+              <button class="finalea" type="button">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="shop-content">
+            <span class="shop-item-title">Alienware 240hz</span>
+            <img class="shop-item-image" src="monitor.png" alt="" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$100</span>
+              <br />
+              <button class="finalea" type="button">ADD TO CART</button>
+            </div>
+          </div>
+          <div class="shop-content">
+            <span class="shop-item-title">G Pro X</span>
+            <img class="shop-item-image" src="headphones.png" alt="" />
+            <div class="shop-item-details">
+              <span class="shop-item-price">$80</span>
+              <br />
+              <button class="finalea" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Cart -->
+      <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <br />
+        <div class="cart-row">
+          <span class="cart-item cart-header cart-column">ITEM</span>
+          <span class="cart-price cart-header cart-column">PRICE</span>
+          <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items"></div>
+        <div class="cart-total">
+          <strong class="cart-total-title">Total</strong>
+          <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn-buy" type="button" id="show-w2">Buy Now</button>
+        <!-- Transferring the total over to the next webpage (by using session storage) -->
+        <script>
+          const BuyButton = document.getElementById("show-w2");
+          const Total = document.getElementsByClassName("cart-total-price")[0];
+
+          BuyButton.addEventListener("click", () => {
+            var FinalAmount = Total.innerHTML;
+            sessionStorage.setItem("Total", FinalAmount);
+          });
+        </script>
+      </section>
+
+      <!--References-->
+      <div class="footer">
+        <hr />
+        <br />
+        <p style="color: bisque"><u>References</u></p>
+        <a
+          href="https://wallpaperscraft.com/download/triangle_shape_dark_88540/1920x1080"
+          style="color: burlywood"
+          class="aq"
+          ><u>Background Image</u></a
+        >
+        <br />
+        <a
+          href="https://getcssscan.com/css-buttons-examples"
+          style="color: burlywood"
+          class="aq"
+          ><u>Buttons</u></a
+        >
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <a
+      href="https://steelseries.com/gaming-keyboards/apex-pro-mini"
+      style="color: aquamarine"
+      >Keyboard Image</a
+    >
+    <br />
+    <a
+      href="https://www.logitechg.com/en-us/products/gaming-mice/pro-wireless-mouse.html"
+      style="color: aquamarine"
+      >Mouse Image</a
+    >
+    <br />
+    <a
+      href="https://www.amazon.com/Logitech-Gaming-Headset-Blue-Technology/dp/B07PDFBJZD"
+      style="color: aquamarine"
+      >Headphones Image</a
+    >
+    <br />
+    <a
+      href="https://www.amazon.com/ALIENWARE-AW2521HF-24-5-Gaming-Monitor/dp/B087N4LQPN"
+      style="color: aquamarine"
+      >Monitor Image</a
+    >
+    <br />
+    <a href="../EditorPage/pageeditor.html" style="color: aquamarine"
+      >Page Editor Link</a
+    >
+  </body>
+</html>

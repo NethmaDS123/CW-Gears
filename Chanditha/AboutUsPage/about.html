@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="./CSS/about.css">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <div class="container1">
+        <div class="container2">
+
+            <!-- NavBar Container -->
+
+            <div class="container">
+                <nav class="nav-bar">
+                    <div class="logo-container">
+                        <div class="logo">GEARS</div>
+                    </div>
+                    <ul class="links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../Dulran/ProductsPage/buyproducts.html">Shop</a></li>
+                        <li><a href="../../Infas/Sitemap.html">SiteMap</a></li>
+                        <li><a href="../../Nethma/CommentsPage/comments.html">Comments</a></li>
+                        <li><a href="../QuizPage/index.html">Quiz</a></li>
+                        <li><a href="../../Infas/Gallery.html">Gallery</a></li>
+                        <li><a href="../AboutUsPage/about.html">About Us</a></li> 
+                    </ul>
+                    <p id="menu" class="hamburger">&#9776;</p>
+                </nav>
+            </div>
+
+            <section class="about-us-container">
+
+                <h1>About Us</h1>
+
+                <h2>Hover over the images to see details on each of us!</h2>
+
+                <!-- The container that holds all the people -->
+
+                <div class="people-container">
+
+                    <!-- The containers that hold each of the people -->
+
+                    <div class="person-container">
+
+                        <img src="Assets/Dulran.jpg" alt="Person 3" class="person-image" id="std-one">
+                        <p class="student-one hide">Dulran Samarasinghe</p>
+                        <p class="student-one hide">Role: Student 1</p>
+
+                    </div>
+
+                    <div class="person-container">
+
+                        <img src="Assets/Nethma.jpg" alt="Person 4" class="person-image" id="std-two">
+                        <p class="student-two person-name hide">Nethma De Silva</p>
+                        <p class="student-two person-role hide">Role: Student 2</p>
+
+                    </div>
+
+                    <div class="person-container">
+
+                        <img src="Assets/Chanditha.jpg" alt="Person 2" class="person-image" id="std-three">
+                        <p class="student-three person-name hide">Chanditha Mahanama</p>
+                        <p class="student-three person-role hide">Role: Student 3</p>
+
+                    </div>
+
+                    <div class="person-container">
+
+                        <img src="Assets/Infas.jpeg" alt="Person 1" class="person-image" id="std-four">
+                        <p class="student-four person-name hide">Infas Iqbal</p>
+                        <p class="student-four person-role hide">Role: Student 4</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Empy Div used to keep space when there is no text on screen -->
+
+            <div class="empty-div none">
+                
+            </div>
+
+           
+        </div>
+
+        <footer>
+
+            <a href="../PageEditorPage/editor.html">Chanditha Mahanama Page Editor Link</a>
+
+        </footer>
+
+    </div>
+    
+    <script src="JS/about.js"></script>
+    <!-- Common NavBar JS -->
+    <script>
+
+        let hamburger = document.querySelector("#menu");
+        let linkList = document.querySelector(".links");
+    
+        hamburger.addEventListener("click", () => {
+    
+            linkList.classList.toggle("shown");
+    
+        })
+    
+    </script>
+
+</body>

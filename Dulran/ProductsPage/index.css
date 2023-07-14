@@ -1,0 +1,138 @@
+:root {
+    --bg-color: #292430;
+    --font-color: aliceblue;
+    --primary-color: #1F1C25;
+    --secondary-color: #EA4F57;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--font-color);
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--bg-color);
+}
+
+.container2{
+    position: relative;
+    background:var(--bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-image {
+    width: auto;
+    height: 80px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container * {
+    margin-inline: 10px;
+}
+
+.container{
+    background-image: url(/background.png); 
+    background-repeat: no-repeat;
+    background-color: var(--primary-color);
+}
+    
+a {
+    text-decoration: none;
+}
+    
+li {
+    list-style: none;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+    
+.links a {
+    color: #fff;
+}
+    
+
+.logo {
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+    
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+    
+.buttons li:hover {
+    background-color: #2e318f;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+    
+.buttons li {
+    padding: 5px 14px;
+}
+    
+
+input[type=checkbox]{
+display: none;
+} 
+     
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    position: relative;
+    top:-2px
+}
+
+@media (max-width: 1000px) {
+    
+    .buttons { 
+        display:none;
+        position: absolute;
+        background-color: #151319;
+        right: 0;
+        left: 0px;
+        text-align: center;
+        padding: 16px 0;
+    }
+    
+    .buttons li:hover {
+        display: inline-block;
+        background-color:var(--primary-color);
+        transition: 0.3s ease;
+    }
+    
+    .buttons li + li {
+        margin-top: 12px;
+    }
+    
+    input[type=checkbox]:checked ~ .buttons{
+        display: block;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+    
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+}

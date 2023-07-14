@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1"
+    />
+    <!-- Adding the poppins font package and import website icon + More icons -->
+    <title>Processing Order</title>
+    <link rel="icon" type="image/x-icon" href="buyproducts.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="boilerplate.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="w2-container">
+      <!-- Navbar -->
+      <nav class="nav-bar">
+        <div class="logo-container">
+          <div class="logo">GEARS</div>
+        </div>
+        <ul class="links">
+          <li><a href="../SplashPage/index.html">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="../../Infas/Sitemap.html">SiteMap</a></li>
+          <li>
+            <a href="../../Nethma/CommentsPage/comments.html">Comments</a>
+          </li>
+          <li><a href="../../Chanditha/QuizPage/index.html">Quiz</a></li>
+          <li><a href="../../Infas/Gallery.html">Gallery</a></li>
+          <li><a href="../../Chanditha/AboutUsPage/about.html">About Us</a></li>
+        </ul>
+        <p id="menu" class="hamburger">&#9776;</p>
+      </nav>
+      <!-- Navbar hamburger menu toggle icon -->
+      <script>
+        let hamburger = document.querySelector("#menu");
+        let linkList = document.querySelector(".links");
+
+        hamburger.addEventListener("click", () => {
+          linkList.classList.toggle("shown");
+        });
+      </script>
+
+      <div class="wallpaper">
+        <div class="top">
+          <br />
+          <h1 style="text-align: center"><u>Your Order</u></h1>
+          <br />
+          <p id="total-show"></p>
+          <!-- Getting Total price from the first website using session storage-->
+          <script>
+            var FinalPrice = sessionStorage.getItem("Total");
+            const totalShow = document.getElementById("total-show");
+            totalShow.innerHTML = "Total: " + FinalPrice;
+          </script>
+          <br />
+        </div>
+
+        <hr />
+        <form action="#" class="contact" method="post">
+          <!-- Asking for inputs with * next to required fields-->
+          <select name="location" class="language" onclick="enableSubmit">
+            <option value="choice">English</option>
+            <option value="onclick">Spanish</option>
+            <option value="onclick">French</option>
+            <option value="onclick">Arabic</option>
+            <option value="onclick">Latin</option>
+          </select>
+          <br />
+          <p><u>Billing Address</u></p>
+          <p>Address 1*</p>
+          <input type="text" name="ad1" class="Address1" id="Add1" required />
+          <p>Address 2</p>
+          <input type="text" name="ad2" class="Address2" id="Add2" />
+          <p>Address 3</p>
+          <input type="text" name="ad3" class="Address3" id="Add3" />
+          <p>Town/City*</p>
+          <input type="text" name="city" class="Town" id="City" required />
+          <p>State/Region*</p>
+          <input type="text" name="reg" class="State" id="State" required />
+          <p>Postcode/Zip code*</p>
+          <input type="tel" name="zip" class="Postcode" id="Zip" required />
+          <p>Country*</p>
+          <select
+            name="location"
+            id="countryselect"
+            class="Country"
+            required
+            multiple
+          >
+            <option value="onclick">Sri Lanka</option>
+            <option value="onclick">UK</option>
+            <option value="onclick">USA</option>
+            <option value="onclick">Canada</option>
+          </select>
+          <hr />
+          <br />
+          <p><u>Contact Details</u></p>
+          <br />
+          <p>Phone Number</p>
+          <input
+            type="number"
+            name="ad1"
+            id="contact"
+            class="phonenum"
+            required
+          />
+          <p>Email Address</p>
+          <input type="text" name="ad2" id="email" required />
+          <br />
+          <button
+            type="reset"
+            class="finalea"
+            onclick="window.location.href='buyproducts.html'"
+          >
+            Cancel
+          </button>
+          <button type="submit" class="finalea">Submit</button>
+        </form>
+        <br />
+        <hr />
+        <!-- <a href="buyprod3.html"><button type="submit" id="submit" class="finalea">Make Payment</button></a> -->
+
+        <!-- Validating if all fields are filled to proceed, make payment would redirect to the payment page if criteria is met-->
+        <script>
+          const submitButton = document.querySelector("#submit");
+          const Address1 = document.getElementById("Add1");
+          const Address2 = document.getElementById("Add2");
+          const Address3 = document.getElementById("Add3");
+          const town = document.getElementById("City");
+          const State = document.getElementById("State");
+          const Post = document.getElementById("Zip");
+          const Country = document.querySelector("select[name='location']");
+          const Contact = document.getElementById("contact");
+          const Email = document.getElementById("email");
+          const Region = document.getElementById("countryselect").value;
+          const form = document.querySelector(".contact");
+          console.log(form);
+
+          form.addEventListener("submit", (event) => {
+            event.preventDefault();
+            if (
+              Address1.value === "" ||
+              town.value === "" ||
+              State.value === "" ||
+              Post.value === "" ||
+              Country.value === ""
+            ) {
+              alert("Please fill out all the required fields");
+            } else {
+              var Address1Val = Address1.value;
+              var Address2Val = Address2.value;
+              var Address3Val = Address3.value;
+              var townVal = town.value;
+              var StateVal = State.value;
+              var PostVal = Post.value;
+              var CountryVal = Country.value;
+              var ContactVal = Contact.value;
+              var EmailVal = Email.value;
+              var RegionVal = Region.value;
+              let addressDetails = {
+                Address1: Address1Val,
+                Address2: Address2Val,
+                Address3: Address3Val,
+                TownCity: townVal,
+                StateRegion: StateVal,
+                PostCode: PostVal,
+                Region: RegionVal,
+              };
+              let jsonObject = JSON.stringify(addressDetails);
+              localStorage.setItem("AddressObject", jsonObject);
+              console.log(addressDetails);
+              window.location.replace("buyprod3.html");
+            }
+          });
+        </script>
+      </div>
+    </div>
+
+    <!-- References-->
+    <div class="footer">
+      <p>References</p>
+      <a
+        href="https://wallpaperaccess.com/blur-pc#google_vignette"
+        style="color: burlywood"
+        class="aq"
+        ><u>Background Image</u></a
+      >
+      <br />
+      <a
+        href="https://getcssscan.com/css-buttons-examples"
+        style="color: burlywood"
+        class="aq"
+        ><u>Buttons</u></a
+      >
+      <br />
+      <a href="https://boxicons.com/?query=" style="color: burlywood" class="aq"
+        ><u>Icons</u></a
+      >
+    </div>
+    <a href="../EditorPage/pageeditor.html" style="color: aquamarine"
+      >Page Editor Link</a
+    >
+  </body>
+</html>

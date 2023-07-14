@@ -1,0 +1,283 @@
+@import url(boilerplate.css);
+
+body{
+    color: aliceblue;
+    font-size: 1vw;
+}
+.outer-contmod{
+    z-index: 0;
+    height: 47vw;
+    position: relative;
+    margin-bottom: -18px;
+    padding-bottom: -20px;
+}
+h1{
+    font-family: sans-serif;
+    text-align: center;
+}
+.inner-contmod{
+    width: 96%;
+    height: 95%;
+    bottom: 1%;
+    margin: 0 auto;
+    position: relative;
+    background:rgb(234, 79, 87);
+    border-radius: 20px;
+}
+.mycont{
+    justify-content: center;
+    width: 90%;
+    height: auto;
+    margin:0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 10%;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 95%;
+    height: auto;
+    justify-content: center;
+}
+.flex-container img{
+    margin-top: 20%;
+    max-width: 90%;
+    width: 15vw;
+    height: auto;
+    display: flex;
+    border-radius: 5%;
+}
+.flex-container img:hover {
+    transform: scale(1.1);
+    opacity: 0.25;
+}
+.panel {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 30vw;
+    width: 90%;
+    border-radius: 10%;
+    background-color: var(--bg-color);
+}
+.panelimg{
+    width: 60%;
+    height: auto;
+}
+.panelp{
+    width: 39%;
+    height: auto;
+    right: 1%;
+}
+.panel img {
+    margin-top: 2%;
+    margin-left: 5%;
+    height: auto;
+    width: 90%;
+    border-radius: 10%;
+}
+.panel p {
+    margin-left: 3%;
+    text-align: center;
+}
+table {
+    z-index: 1;
+    position: fixed;
+    top: 20%;
+    right: 1%;
+}
+td {
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10%;
+    border: 0.1vw solid black;
+    font-size: 0.9vw;
+}
+
+.theme1 {
+    background-color: #292430;
+    color: aliceblue;
+}
+.theme1 .panel {
+    background-color: #292430;
+    color: aliceblue;
+}
+.theme1 a{
+    color: aliceblue;
+}
+
+.theme2{
+    background-color: #16320c;
+    color:  #97e07b;
+}
+.theme2 .panel{
+    background-color: #16320c;
+    color: #97e07b;
+}
+.theme2 a{
+    color: #97e07b;
+}
+.theme2 .inner-container{
+    background-color: #439523;
+}
+
+.theme3{
+    background-color: #520100;
+    color:  #ffafad;
+}
+.theme3 .panel{
+    background-color:  #520100;
+    color: #ffafad;
+}
+.theme3 a{
+    color: #ffafad;
+}
+
+.theme4{
+    background-color: "";
+	color: "";
+}
+.theme4 .panel{
+    background-color: "";
+	color: "";
+}
+.theme4 a{
+    color: "";
+}
+
+.but{
+    z-index: 1;
+    position: fixed;
+    top: 41%;
+    right: 1%;
+    flex-direction: column;
+}
+.myfooter{
+    z-index: 1;
+    text-align: center;
+}
+a{
+    color: var(--font-color);
+}
+.outer-contmod-svg{
+    height: 47vw;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: -1.4vw;
+    padding-bottom: -1.5vw;
+}
+.inner-cont-svg{
+    width: 88vw;
+    height: 28vw;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 1.5vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+circle {
+    fill: #282634;
+}
+a{
+    fill: aliceblue;
+}
+circle:hover, text:hover{
+    fill: red;
+    stroke-width: 5px;
+    stroke: red;
+}
+
+.t1{
+    z-index: 1;
+    position: fixed;
+    top: 20%;
+    left: 92%;
+}
+.td1 {
+    padding: 0.3%;
+    text-align: right;
+    border-radius: 10%;
+    font-size: 1vw;
+    border: 0.08vw solid black;
+    background-color: aliceblue;
+    color: black;
+}
+.td1 a{
+    text-decoration: none;
+    color: black;
+}
+.td1 a:hover{
+    text-decoration: underline;
+}
+
+.cont2mc{
+    position: relative;
+    width: auto;
+    height: 59vw;
+    margin: 0 auto;
+    border-radius: 3%;
+    display: flex;  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 0.15 solid black;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.textboxhead{
+    background-color: rgb(234, 79, 87);
+    width: 50%;
+    height: 20%;
+    margin-top: 46%;
+    margin-left: 3%;
+    border-radius: 3%;
+}
+.textbox{
+    background-color: rgb(234, 79, 87);
+    width: 30%;
+    height: auto;
+    margin-left: 1%;
+    margin-top: 3%;
+    border-radius: 5%;
+}
+.textbox p{
+    margin-left: 1%;
+}
+.textboxfoot1{
+    background-color: rgb(234, 79, 87);
+    width: 30%;
+    height: auto;
+    margin-left: 2%;
+    margin-top: 35%;
+    border-radius: 5%;
+}
+.textboxfoot1 p{
+    margin-left: 1%;
+}
+.textboxfoot2{
+    background-color: rgb(234, 79, 87);
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-top: 35%;
+    border-radius: 5%;
+}
+.textboxfoot2 p{
+    margin-left: 1%;
+}
+.mc2 h1{
+    margin-left: 3%;
+    font-size: 1.8vw;
+}
+.mc2 p{
+    margin-left: 3%;
+    font-size: 0.95vw;
+}
+

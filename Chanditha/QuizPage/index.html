@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+        <div class="container2">
+
+            <!-- NavBar container -->
+
+            <div class="container">
+                <nav class="nav-bar">
+                    <div class="logo-container">
+                        <div class="logo">GEARS</div>
+                    </div>
+                    <ul class="links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../Dulran/ProductsPage/buyproducts.html">Shop</a></li>
+                        <li><a href="../../Infas/Sitemap.html">SiteMap</a></li>
+                        <li><a href="../../Nethma/CommentsPage/comments.html">Comments</a></li>
+                        <li><a href="../QuizPage/index.html">Quiz</a></li>
+                        <li><a href="../../Infas/Gallery.html">Gallery</a></li>
+                        <li><a href="../AboutUsPage/about.html">About Us</a></li> 
+                    </ul>
+                    <p id="menu" class="hamburger">&#9776;</p>
+                </nav>
+            </div>
+
+            <h1 class="quiz-topic">QUIZ</h1>
+
+            <div class="quiz-section hide">
+
+                <div class="quiz-container">
+
+                    <div class="quiz-top">
+
+                        <div class="quiz-quests-remaining">
+
+                            <span class="questions-remaining">1</span>/10
+
+                        </div>
+
+                        <div class="timer">
+
+                            <span id="time-displayed">60</span>s
+
+                        </div>
+
+                    </div>
+
+                    <div class="quiz-question-container">
+
+                        <span class="questions-remaining">1</span><span class="quiz-question-text">. Question is the question that is asked?</span>
+
+                    </div>
+
+                    <div class="quiz-answers-container">
+
+                        <button class="answer-option">Option 1</button>
+                        <button class="answer-option">Option 2</button>
+                        <button class="answer-option">Option 3</button>
+                        <button class="answer-option">Option 4</button>
+
+                    </div>
+
+                    <div class="quiz-bottom">
+
+                        <button id="next-btn" class="quiz-next-btn">Next</button>
+                    
+                    </div>            
+                
+                </div>
+
+            </div>
+
+            <!-- Information Sheet that is displayed at the start -->
+
+            <div id="info-sheet" class="info-sheet">
+
+                <h2>Introduction</h2>
+                <h3>Welcome to the GEARS Quiz!</h3>
+                <p>This quiz aims to test your knowledge of general gaming trivia.</p>
+                <h2>Rules</h2>
+                <ul>
+                    <li>You have <strong>10</strong> questions.</li>
+                    <li>You have <strong>60</strong> seconds for the entire quiz.</li>
+                    <li>The correct answer is immediately returned which means you can not go to a previous question.</li>
+                </ul>
+                <p>Good luck and we hope you have a great time!</p>
+                <button id="start-btn" class="quiz-next-btn">Start</button>
+            
+            </div>
+
+            <!-- Performance sheet that is displayed at the end -->
+
+            <div id="perf-sheet" class="info-sheet perf-sheet hide">
+                <h1>Congratulations!</h1>
+                <h3>You have finished the quiz in <span class="quiz-time-taken">60</span> seconds with a score of:</h3>
+                <h2 id="score">5 out of 10</h2>
+                <p id="award">You are a novice gamer who is still yet to play everything the medium has to offer.</p>
+                <button id="rstrt-btn" class="quiz-next-btn">Restart Quiz</button>
+            </div>
+
+            <footer>
+
+                <a href="../PageEditorPage/editor.html">Chanditha Mahanama Page Editor Link</a>
+
+            </footer>
+           
+        </div>
+      
+<script src="./JS/script.js"></script>
+
+<!-- Common JS for the NavBar -->
+
+<script>
+
+    let hamburger = document.querySelector("#menu");
+    let linkList = document.querySelector(".links");
+
+    hamburger.addEventListener("click", () => {
+
+        linkList.classList.toggle("shown");
+
+    })
+
+</script>
+    
+</body>

@@ -1,0 +1,127 @@
+@import url(../CommonCSS/boilerplate.css);
+
+.container1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.anchor-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+
+}
+.anchors{
+    display: flex;
+    text-align: center;
+    padding: 0px;
+    margin: 10px;
+}
+.anchors li {
+    margin-right: 1vw;
+    font-size: 1.25rem;
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.anchors li a {
+    color: rgb(146, 157, 215);
+    font-weight: 1000;
+    padding: 5px 14px;
+}
+
+.anchors li a:hover {
+    color: var(--font-color);
+    background-color: #2e318f;
+    border-radius: 5px;
+    transition: 0.3s ease
+
+}
+.text-container{
+    border: solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #181932;
+}
+
+.img1{
+    width:50%;
+    border-radius: 20px;
+    border: solid black;
+    border-width: 5px;
+   
+}
+.img2{
+    width: 70%;
+    border-radius: 20px;
+    border: solid black;
+    border-width: 5px;
+
+}
+.img3{
+    width: 70%;
+    border-radius: 20px;
+    border: solid black;
+    border-width: 5px;
+}
+.img4{
+    width: 70%;
+    border-radius: 20px;
+    border: solid black;
+    border-width: 5px;
+}
+
+.ref-container{
+    border: solid;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #181932;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.ref-container a{
+    color: rgb(228, 104, 104);
+}
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin-top: 40px;
+    padding: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(240, 240, 255);
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rev {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .anchors {
+        flex-direction: column;
+    }
+  }

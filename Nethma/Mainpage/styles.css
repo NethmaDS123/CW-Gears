@@ -1,0 +1,674 @@
+@import url(../CommonCSS/boilerplate.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1{
+    background-image: url(../Assets/background.png); 
+    height: 51.5rem; 
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.container2{
+    width: 100%;
+    height: 200vh;
+    background-color:#282634;
+    border: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.container3{
+    width: 100%;
+    height: 24vh;
+    border-color: rgb(0, 0, 0);
+    border: solid;
+    border-width: 2px;
+    border-bottom-width: 4px;
+}
+
+.nav-bar {
+    background-color: var(--primary-color);
+}
+
+
+/*Batman CSS */
+
+
+.Gamesheader{
+    color: white;
+    font-size:40px;
+    width: fit-content;
+    position: relative;
+    left: 43%;
+    padding:10px 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: solid;
+    background-color: #15174f;
+    
+}
+@media(max-width: 500px){
+    .Gamesheader{
+        color: white;
+        font-size:40px;
+        width: fit-content;
+        position: relative;
+        left: 25%;
+        padding:10px 20px;
+        margin-top: 10px;
+        border-radius: 20px;
+        border: solid;
+        background-color: #15174f;
+        
+    }
+    
+
+
+}
+@media(max-width: 800px){
+    .Gamesheader{
+        color: white;
+        font-size:40px;
+        width: fit-content;
+        position: relative;
+        left: 35%;
+        padding:10px 20px;
+        margin-top: 10px;
+        border-radius: 20px;
+        border: solid;
+        background-color: #15174f;
+        
+    }
+    
+
+
+}
+
+.game1{
+    color: rgb(245, 243, 248);
+    position: relative; 
+    left: 25%; 
+    padding: 5px 14px;
+    background-color: #2e318f;
+    border-radius: 5px;
+    
+}
+.game1:hover{
+    color: rgb(255, 255, 255);
+    position: relative; 
+    left: 25%; 
+   
+    padding: 5px 14px;
+    background-color: #15174f;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.Games{
+    width: 50%;
+    height: 85%;
+    padding-bottom: 30px;
+    background-color: rgb(238, 59, 95);
+    position: relative;
+    border-radius: 25px;
+    left: 25%;
+    top: 120px;
+    right: 30%;
+    padding-left: 10px;
+    
+}
+.batmanimage{
+    width: 70%;
+    height: 20%;
+    background-color:black;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    left: 13%;
+    top: 30%; 
+    right: 5%;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+    top: 2%;
+}
+@media (max-width:800px){
+    .game1{
+        color: white;
+        position: relative; 
+        left: 1%; 
+        
+    }
+
+}
+@media (max-width:1255px){
+    .game1{
+        color: white;
+        position: relative; 
+        left: 20%; 
+        justify-content: center;
+        
+    }
+
+}
+@media (max-width:500px){
+    .container2{
+        width: 100%;
+        height: 100vh;
+        background-color:#282634;
+        border: solid;
+        border-color: black;
+        border-width: 5px;
+    }
+   
+    .game1{
+        color: white;
+        position: relative; 
+        left: 10%; 
+        font-size: small;
+        
+    }
+    
+    .game1:hover{
+        color: white;
+        position: relative; 
+        left: 2%; 
+        padding: 5px 14px;
+        background-color: #2e318f;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        font-size: small;
+    }
+    
+    .Games{
+        width: 50%;
+        height: 75%;
+        background-color: rgb(238, 59, 95);
+        position: relative;
+        border-radius: 25px;
+        left: 25%;
+        top: 10%;
+        right: 15%;
+        
+    }
+    .batmanimage{
+        width: 90%;
+        height: 10%;
+        background-color:black;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        left: 5%;
+        top: 30%; 
+        right: 5%;
+        border-radius: 20px;
+        object-fit: cover;
+        position: relative;
+        top: 2%;
+    }
+
+
+}
+
+/*Eldenring CSS */
+    
+.Eldenring{
+    width: 70%;
+    height: 22%;
+    background-color:black;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    left: 13%;
+    top: 30%; 
+    right: 5%;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+    top: 2%;
+}
+.game2{
+    color: rgb(245, 243, 248);
+    position: relative; 
+    left: 36%; 
+    right:35%;
+    padding: 5px 14px;
+    background-color: #2e318f;
+    border-radius: 5px;
+    
+}
+.game2:hover{
+    color: rgb(255, 255, 255);
+    position: relative; 
+    left: 36%; 
+    right: 35%;
+    padding: 5px 14px;
+    background-color: #15174f;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+@media (max-width:800px){
+    .Eldenring{
+        width: 70%;
+        height: 20%;
+        background-color:black;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        left: 13%;
+        top: 30%; 
+        right: 5%;
+        border-radius: 20px;
+        object-fit: cover;
+        position: relative;
+        top: 2%;
+    }
+    .game2{
+        color: rgb(245, 243, 248);
+        position: relative; 
+        left: 25%; 
+        
+        padding: 5px 14px;
+        background-color: #2e318f;
+        border-radius: 5px;
+        
+    }
+    
+    .game2:hover{
+        color: rgb(255, 255, 255);
+        position: relative; 
+        left: 25%; 
+        right: 25%;
+        padding: 5px 14px;
+        background-color: #15174f;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+}
+@media (max-width:500px){
+    .Eldenring{
+        width: 80%;
+        height: 10%;
+        background-color:black;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        left: 10%;
+        top: 30%; 
+        right: 5%;
+        border-radius: 20px;
+        object-fit: cover;
+        position: relative;
+        top: 2%;
+    }
+    .game2{
+        color: rgb(245, 243, 248);
+        position: relative; 
+        left: 22%; 
+        
+        padding: 5px 14px;
+        background-color: #2e318f;
+        border-radius: 5px;
+        font-size: small;
+        
+    }
+    
+    .game2:hover{
+        color: rgb(255, 255, 255);
+        position: relative; 
+        left: 22%; 
+        right: 25%;
+        padding: 5px 14px;
+        background-color: #15174f;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        font-size: small;
+    }
+}
+
+
+/*Fortnite CSS */
+
+.Fortnite{
+    width: 70%;
+    height: 22%;
+    background-color:black;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    left: 13%;
+    top: 30%; 
+    right: 5%;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+    top: 2%;
+}
+.game3{
+    color: rgb(245, 243, 248);
+    position: relative; 
+    left: 39%;
+    right: 30vh;
+    padding: 5px 14px;
+    background-color: #2e318f;
+    border-radius: 5px;
+    
+}
+.game3:hover{
+    color: rgb(255, 255, 255);
+    position: relative; 
+    left: 39%; 
+    right: 35%;
+    padding: 5px 14px;
+    background-color: #15174f;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+@media(max-width: 1200px){
+    .Fortnite{
+        width: 70%;
+        height: 22%;
+        background-color:black;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        left: 13%;
+        top: 30%; 
+        right: 5%;
+        border-radius: 20px;
+        object-fit: cover;
+        position: relative;
+        top: 2%;
+    }
+    .game3{
+        color: rgb(245, 243, 248);
+        position: relative; 
+        left: 30%;
+        right: 30vh;
+        padding: 5px 14px;
+        background-color: #2e318f;
+        border-radius: 5px;
+        
+    }
+    
+    .game3:hover{
+        color: rgb(255, 255, 255);
+        position: relative; 
+        left: 39%; 
+        right: 35%;
+        padding: 5px 14px;
+        background-color: #15174f;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+}
+@media(max-width: 500px){
+    .Fortnite{
+        width: 80%;
+        height: 12%;
+        background-color:black;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        left: 10%;
+        top: 30%; 
+        right: 5%;
+        border-radius: 20px;
+        object-fit: cover;
+        position: relative;
+        top: 2%;
+    }
+    .game3{
+        color: rgb(245, 243, 248);
+        position: relative; 
+        left: 27%;
+        right: 30vh;
+        padding: 5px 14px;
+        background-color: #2e318f;
+        border-radius: 5px;
+        font-size: small;
+        
+    }
+    
+    .game3:hover{
+        color: rgb(255, 255, 255);
+        position: relative; 
+        left: 27%; 
+        right: 35%;
+        padding: 5px 14px;
+        background-color: #15174f;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        font-size: small;
+    }
+
+}
+
+/*GTA CSS */
+
+.GTA5{
+    width: 70%;
+    height: 22%;
+    background-color:black;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    left: 13%;
+    top: 30%; 
+    right: 5%;
+    border-radius: 20px;
+    object-fit: cover;
+    position: relative;
+    top: 2%;
+}
+.game4{
+    color: rgb(245, 243, 248);
+    position: relative; 
+    left: 30%;
+    right: 30vh;
+    padding: 5px 14px;
+    background-color: #2e318f;
+    border-radius: 5px;
+    
+}
+.game4:hover{
+    color: rgb(255, 255, 255);
+    position: relative; 
+    left: 30%; 
+    right: 35%;
+    padding: 5px 14px;
+    background-color: #15174f;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+@media(max-width: 1200px){
+    .GTA5{
+        width: 70%;
+        height: 22%;
+        background-color:black;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        left: 13%;
+        top: 30%; 
+        right: 5%;
+        border-radius: 20px;
+        object-fit: cover;
+        position: relative;
+        top: 2%;
+    }
+    .game4{
+        color: rgb(245, 243, 248);
+        position: relative; 
+        left: 20%;
+        right: 30vh;
+        padding: 5px 14px;
+        background-color: #2e318f;
+        border-radius: 5px;
+        
+    }
+    
+    .game4:hover{
+        color: rgb(255, 255, 255);
+        position: relative; 
+        left: 39%; 
+        right: 35%;
+        padding: 5px 14px;
+        background-color: #15174f;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+}
+@media(max-width: 760px){
+    .GTA5{
+        width: 70%;
+        height: 22%;
+        background-color:black;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        left: 13%;
+        top: 30%; 
+        right: 5%;
+        border-radius: 20px;
+        object-fit: cover;
+        position: relative;
+        top: 2%;
+    }
+    .game4{
+        color: rgb(245, 243, 248);
+        position: relative; 
+        left: 15%;
+        right: 30vh;
+        padding: 5px 14px;
+        background-color: #2e318f;
+        border-radius: 5px;
+        
+    }
+    
+    .game4:hover{
+        color: rgb(255, 255, 255);
+        position: relative; 
+        left: 39%; 
+        right: 35%;
+        padding: 5px 14px;
+        background-color: #15174f;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+}
+@media(max-width: 500px){
+    .GTA5{
+        width: 80%;
+        height: 12%;
+        background-color:black;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
+        left: 10%;
+        top: 30%; 
+        right: 5%;
+        border-radius: 20px;
+        object-fit: cover;
+        position: relative;
+        top: 2%;
+    }
+    .game4{
+        color: rgb(245, 243, 248);
+        position: relative; 
+        left: 10%;
+        right: 30vh;
+        padding: 5px 14px;
+        background-color: #2e318f;
+        border-radius: 5px;
+        font-size: small;
+    }
+    
+    .game4:hover{
+        color: rgb(255, 255, 255);
+        position: relative; 
+        left: 10%; 
+        right: 35%;
+        padding: 5px 14px;
+        background-color: #15174f;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        font-size: small;
+    }
+
+}
+
+
+.Pageeditor{
+    color: white;
+    position: relative;
+    left: 35%;
+    
+    
+}
+
+
+@media(max-width:769px){
+    .Pageeditor{
+        color: white;
+        position: relative;
+        left: 30%;
+        
+    }
+  
+
+}
+
+@media(max-width:600px){
+    .Pageeditor{
+        color: white;
+        position: relative;
+        left: 25%;
+        
+    }
+  
+
+}
+
+.text-container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+.text-container a {
+    color: rgb(237, 144, 144);
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+

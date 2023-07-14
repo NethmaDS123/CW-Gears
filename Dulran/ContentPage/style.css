@@ -1,0 +1,218 @@
+@import url(boilerplate.css);
+
+html,body{
+    font-family: 'Poppins', Courier, monospace;
+    background-color: #282634;
+    color: blanchedalmond;;
+    scroll-behavior: smooth;
+}
+
+.main{
+    height: 120vh;
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+
+.fort{
+    padding-left:15%;
+}
+
+.fortnite{
+    color: white;
+    text-align: center;
+    font-size: x-large;
+}
+
+.trailer{
+    padding-left: 15%;
+    padding-right:5%;
+
+}
+
+.trailertext{
+    padding-top:0%;
+    font-size:x-large;
+    text-align: center;
+}
+
+.trailer2{
+    padding-left: 3%;
+    padding-top:2%;
+    padding-right:2%;
+    font-size:x-large;
+    text-align: right;
+    text-align: center;
+}
+
+.two{
+    padding-top:2%;
+    padding-left:7%;
+    padding-bottom:1%;
+}
+
+.reqsmin{
+    text-align: left;
+    font-size:x-large;
+    padding-top:2%;
+    padding-left:2%;
+}
+
+
+.reqsmax{
+    text-align: right;
+    font-size:x-large;
+    padding-right:5%;
+}
+
+.req{
+    padding-top:2%;
+}
+
+.ref{
+    padding-top: 1%;
+    font-size: x-large;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    
+a {
+    text-decoration: none;
+}
+    
+li {
+    list-style: none;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    
+   
+}
+    
+.links a {
+    color: #fff;
+}
+    
+
+.logo {
+    font-size: 32px;
+}
+    
+
+.buttons {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+    
+.buttons li:hover {
+    background-color: #2e318f;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+    
+.buttons li {
+    padding: 5px 14px;
+}
+    
+
+input[type=checkbox]{
+display: none;
+} 
+     
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+    
+
+@media (max-width: 768px) {
+    
+    .buttons { 
+        display:none;
+        position: absolute;
+        background-color:rgb(9, 9, 9);
+        right: 0;
+        left: 0px;
+        text-align: center;
+        padding: 16px 0;
+    }
+    
+    .buttons li:hover {
+        display: inline-block;
+        background-color:#231779;
+        transition: 0.3s ease;
+    }
+    
+    .buttons li + li {
+        margin-top: 12px;
+    }
+    
+    input[type=checkbox]:checked ~ .buttons{
+        display: block;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+    
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+}
+
+.aq:link {
+    background-color: yellow;
+  }
+  
+  .aq:visited {
+    background-color: rgb(212, 0, 255);
+  }
+  
+  .aq:hover {
+    background-color: lightgreen;
+  }
+  
+  .aq:active {
+    background-color: hotpink;
+  } 
+
+  .xd{
+    padding-left:5%;
+    padding-top:1%;
+  }
+
+    .abutton {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.abutton:hover {
+	background-color: #534e4e;
+    transition: ease-in 0.3s;
+}
+
+.Tags{
+    font-size: x-large;
+    padding-bottom: 1%;
+}

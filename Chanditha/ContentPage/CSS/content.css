@@ -1,0 +1,122 @@
+@import url(boilerplate.css);
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin-top: 40px;
+    padding: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.display-img {
+    max-width: 600px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.anchors {
+    display: flex;
+    /* flex-direction: column; */
+    text-align: center;
+    padding: 0px;
+    margin: 20px;
+}
+
+.anchors li {
+    margin-right: 40px;
+    font-size: 1.25rem;
+    padding: 2px 5px;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+.anchors li a {
+    color: var(--secondary-color);
+}
+
+.anchors li a:hover {
+    color: var(--font-color);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.requirements p {
+    margin: 0px;
+}
+
+.required {
+    color: rgb(123, 127, 131);
+}
+
+.text-container a {
+    color: orange;
+    text-decoration: underline;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+@media only screen and (max-width: 700px) {
+
+    .anchors {
+        flex-direction: column;
+        margin-left: 25px;
+    }
+    
+    .section {
+        align-items: center;
+    }
+
+    .anchors li {
+        margin: 5px;
+    }
+
+    .text-container {
+        width: 90vw;
+    }
+
+    .text-container a {
+        text-align: center;
+    }
+
+    .display-img {
+        width: 100vw;
+    }
+
+    .requirements h3 {
+        text-align: center;
+    }
+
+  }

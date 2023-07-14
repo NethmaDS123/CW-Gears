@@ -1,0 +1,96 @@
+@import url("./boilerplate.css");
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container2 {
+    position: relative;
+}
+
+.about-us-container h1 {
+    font-size: 2rem;
+}
+
+.about-us-container h2 {
+    text-align: center;
+}
+
+.about-us-container > * {
+    margin: 30px;
+}
+
+.people-container {
+    display: flex;
+    /*  */
+}
+
+.person-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.person-image {
+    height: 260px;
+}
+
+.person-image:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+
+.person-name, .person-role {
+    animation: fadeIn 2s;
+    color: var(--secondary-color);
+}
+
+.person-name {
+    font-size: 1.25rem;
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.empty-div {
+    width: auto;
+    height: 140px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+@media only screen and (min-width: 1025px) {
+    .person-container {
+        margin: 40px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .people-container {
+        flex-direction: column;
+    }
+
+    .none {
+        display: none;
+    }
+}

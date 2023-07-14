@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GTA V</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Importing the CSS -->
+    <link rel="stylesheet" href="./CSS/content.css">
+    <link rel="stylesheet" href="./CSS/mystyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+<!-- Background color black added to modify common CSS-->
+<body style="background-color: black;">
+    <!-- Table with fixed position was created to add page anchors-->
+    <table class="t1">
+        <tr>
+            <td class="td1" ><a href="#intro">Introduction</a></td>
+        </tr>
+        <tr>
+            <td class="td1" ><a href="#chars">Characters</a></td>
+        </tr>
+        <tr>
+            <td  class="td1" style="font-size: 0.75vw;"><a href="#sysreq">Requirements</a></td>
+        </tr>
+    </table>
+    <!-- Common Navbar -->
+    <div class="container2" id="intro">
+        <div class="container" >
+            <nav class="nav-bar">
+                <div class="logo-container">
+                    <div class="logo">GEARS</div>
+                </div>
+                <ul class="links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Dulran/ProductsPage/buyproducts.html">Shop</a></li>
+                    <li><a href="Sitemap.html">SiteMap</a></li>
+                    <li><a href="../Nethma/CommentsPage/comments.html">Comments</a></li>
+                    <li><a href="../Chanditha/QuizPage/index.html">Quiz</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="../Chanditha/AboutUsPage/about.html">About Us</a></li> 
+                </ul>
+                <p id="menu" class="hamburger">&#9776;</p>
+            </nav>
+        </div>
+    </div>
+    <!-- 5 sections were created for the content page and background images were added -->
+    <div class="cont2mc" style="background-image: url(./Images/bg4.jpg);">
+        <!-- the textbox was created to be fixed within a div to display info (attributes of textbox change per section)-->
+        <div class="textboxhead">
+            <h1>GTA V - The ultimate open-world adventure</h1>
+            <p>Grand Theft Auto V is a critically acclaimed action-adventure game developed by Rockstar North and published by Rockstar Games. Set in the fictional city of Los Santos, the game follows the lives of three protagonists – Michael, Franklin, and Trevor – as they navigate the criminal underworld and carry out a series of heists.</p>
+        </div>
+    </div> 
+    <div class="cont2mc" style="background-image: url(./Images/franklin.jpg);" id="chars">
+        <div class="textbox">
+            <h1>Franklin Clinton</h1>
+            <p>Franklin is a young man who works as a repo man for a car dealership. He is trying to break out of the cycle of poverty and crime that he was born into and dreams of making it big. Franklin is a skilled driver and has a strong sense of loyalty to those he considers friends.</p>
+        </div>
+    </div>
+    <div class="cont2mc" style="background-image: url(./Images/micheal.jpg);">
+        <div class="textbox">
+            <h1>Michael De Santa</h1>
+            <p>Michael is a former criminal who has entered witness protection after a failed heist several years ago. He is a middle-aged man who lives in a wealthy neighborhood with his wife and two children, but he yearns for the excitement of his criminal past. Michael is intelligent, ruthless, and has a quick wit.</p>
+        </div>
+    </div>
+    <div class="cont2mc" style="background-image: url(./Images/trevor.jpg);">
+        <div class="textbox">
+            <h1>Trevor Philips</h1>
+            <p>Trevor is a psychopathic former military pilot who now operates a drug empire in the desert outside of Los Santos. He is impulsive, unpredictable, and prone to violent outbursts. Trevor and Michael have a complicated history, and their relationship is strained throughout the game. Despite his flaws, Trevor has a twisted sense of humor and is often a source of comic relief.</p>
+        </div>
+    </div>
+    <div class="cont2mc" style="background-image: url(./Images/bg1.jpg);" id="sysreq">
+        <div class="textboxfoot1">
+            <h1>Minimum Requirements</h1>
+            <p>OS: Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1<br>Processor: Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4 CPUs) @ 2.5GHz<br>Memory: 4GB RAM<br>Graphics: NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)<br>Storage: 72 GB available space</p>
+        </div>
+        <div class="textboxfoot2">
+            <h1>Reccomended Requirements</h1>
+            <p>OS: Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1<br>Processor: Intel Core i5 3470 @ 3.2GHZ (4 CPUs) / AMD X8 FX-8350 @ 4GHZ (8 CPUs)<br>Memory: 8GB RAM<br>Graphics: NVIDIA GTX 660 2GB / AMD HD7870 2GB<br>Storage: 72 GB available space</p>
+        </div>
+    </div>
+    <!-- Common JS Script for NavBar and Responsiveness (NO JS FOR THIS PAGE) -->
+    <script>
+
+        let hamburger = document.querySelector("#menu");
+        let linkList = document.querySelector(".links");
+    
+        hamburger.addEventListener("click", () => {
+    
+            linkList.classList.toggle("shown");
+    
+        })
+    
+    </script>
+
+</body>
+</html>

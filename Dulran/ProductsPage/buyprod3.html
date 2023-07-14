@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Making the website reactive -->
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1"
+    />
+    <!-- Adding the poppins font package and import website icon + More icons -->
+    <title>Order Confirmation</title>
+    <link rel="icon" type="image/x-icon" href="handshake.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="tick.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style3.css" />
+    <link rel="stylesheet" href="boilerplate.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="nav-bar">
+      <div class="logo-container">
+        <div class="logo">GEARS</div>
+      </div>
+      <ul class="links">
+        <li><a href="../SplashPage/index.html">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="../../Infas/Sitemap.html">SiteMap</a></li>
+        <li>
+          <a href="../../Nethma/CommentsPage/comments.html">Comments</a>
+        </li>
+        <li><a href="../../Chanditha/QuizPage/index.html">Quiz</a></li>
+        <li><a href="../../Infas/Gallery.html">Gallery</a></li>
+        <li><a href="../../Chanditha/AboutUsPage/about.html">About Us</a></li>
+      </ul>
+      <p id="menu" class="hamburger">&#9776;</p>
+    </nav>
+
+    <!-- Navbar hamburger menu toggle icon -->
+    <script>
+      let hamburger = document.querySelector("#menu");
+      let linkList = document.querySelector(".links");
+
+      hamburger.addEventListener("click", () => {
+        linkList.classList.toggle("shown");
+      });
+    </script>
+
+    <div class="w3-container">
+      <section class="final">
+        <div class="end">
+          <select name="location" class="language" onclick="enableSubmit">
+            <option value="choice">English</option>
+            <option value="onclick">Spanish</option>
+            <option value="onclick">French</option>
+            <option value="onclick">Arabic</option>
+            <option value="onclick">Latin</option>
+          </select>
+          <h1><u>Your Order</u></h1>
+          <br />
+          <p>Reference:#261662635</p>
+          <p>Description: Make Payment</p>
+          <br />
+          <p id="total-show"></p>
+          <!-- Getting Total price from the first website using session storage-->
+          <script>
+            var FinalPrice = sessionStorage.getItem("Total");
+            const totalShow = document.getElementById("total-show");
+
+            totalShow.innerHTML = "Total: " + FinalPrice;
+          </script>
+          <br />
+          <hr />
+          <br />
+          <div class="finale">
+            <!-- Asking for inputs with * next to required fields-->
+            <p><u>Insert Cards Details</u></p>
+            <br />
+            <form method="get">
+              <p>Expiry Date*</p>
+              <input
+                type="date"
+                name="expiry"
+                id="expdate"
+                class="expire"
+                required
+              />
+              <p>Card Number*</p>
+              <input
+                type="tel"
+                name="pincode"
+                id="pin"
+                pattern="\d{4}"
+                class="cards"
+                required
+              />
+              <br />
+              <p>Security Code*</p>
+              <input
+                type="tel"
+                name="pincode"
+                maxlength="3"
+                id="seccode"
+                pattern="\d{4}"
+                class="sec"
+                required
+              />
+              <br />
+              <p>Cardholder's name*</p>
+              <input
+                type="text"
+                name="pincode"
+                id="holdername"
+                pattern="\d{4}"
+                required
+              />
+              <br />
+            </form>
+            <p>Last 3 digits on the back of card</p>
+            <br />
+            <br />
+          </div>
+        </div>
+        <!-- Getting inputs from the second website to the third-->
+        <form class="contact">
+          <p style="color: bisque"><u>Billing Address</u></p>
+          <p style="color: bisque">Address 1*</p>
+          <input type="text" id="ad1" class="Address" readonly required />
+          <button class="edit" data-id="ad1">Edit</button>
+          <br />
+          <p style="color: bisque">Address 2</p>
+          <input type="text" id="ad2" class="Address2" readonly required />
+          <button class="edit" data-id="ad2">Edit</button>
+          <br />
+          <p style="color: bisque">Address 3</p>
+          <input type="text" id="ad3" class="Address3" readonly required />
+          <button class="edit" data-id="ad3">Edit</button>
+          <br />
+          <p style="color: bisque">Town/City*</p>
+          <input type="text" id="city" class="Town" readonly required />
+          <button class="edit" data-id="city">Edit</button>
+          <br />
+          <p style="color: bisque">State/Region</p>
+          <input type="text" id="region" class="State" readonly required />
+          <button class="edit" data-id="region">Edit</button>
+          <br />
+          <p style="color: bisque">Postcode/Zip code*</p>
+          <input
+            type="tel"
+            id="zip"
+            class="Postcode"
+            maxlength="5"
+            readonly
+            required
+          />
+          <button class="edit" data-id="region">Edit</button>
+          <br />
+          <p style="color: bisque">Country</p>
+          <select name="location" id="Region" class="Country">
+            <option value="onclick">Sri Lanka</option>
+            <option value="onclick">UK</option>
+            <option value="onclick">USA</option>
+            <option value="onclick">Canada</option>
+          </select>
+          <button class="edit">Edit</button>
+          <br /><br />
+          <!-- Validating if all fields are filled to proceed, make payment would redirect to the payment page if criteria is met-->
+          <script>
+            const editbuttons = Array.from(
+              document.getElementsByClassName("edit")
+            );
+            console.log(editbuttons);
+            editbuttons.forEach((btn) => {
+              btn.addEventListener("click", function (event) {
+                event.preventDefault();
+                const idnameText = this.dataset.id;
+                const elemtnfield = document.getElementById(idnameText);
+                elemtnfield.readOnly = false;
+                console.log(idnameText);
+              });
+            });
+            const jsonaddressObject = localStorage.getItem("AddressObject");
+            const addressobject = JSON.parse(jsonaddressObject);
+            console.log(addressobject);
+            const address1 = document.getElementById("ad1");
+            address1.value = addressobject.Address1;
+
+            const address2 = document.getElementById("ad2");
+            address2.value = addressobject.Address2;
+
+            const address3 = document.getElementById("ad3");
+            address3.value = addressobject.Address3;
+
+            const city = document.getElementById("city");
+            city.value = addressobject.TownCity;
+
+            const region = document.getElementById("region");
+            region.value = addressobject.StateRegion;
+
+            const zip = document.getElementById("zip");
+            zip.value = addressobject.PostCode;
+
+            const expiry = document.getElementById("expdate");
+            expiry.value = addressobject.ExpiryDate;
+
+            const card = document.getElementById("pin");
+            card.value = addressobject.CardNumber;
+
+            const security = document.getElementById("seccode");
+            security.value = addressobject.SecurityCode;
+
+            const holder = document.getElementById("pin");
+            holder.value = addressobject.HolderName;
+          </script>
+          <br />
+        </form>
+
+        <form class="cna">
+          <button
+            type="reset"
+            class="finalea"
+            onclick="window.location.href='buyproducts.html'"
+          >
+            Cancel
+          </button>
+          <input
+            type="button"
+            onclick="clickAlert()"
+            value="Confirm Order"
+            class="finalea"
+          />
+        </form>
+        <script>
+          function clickAlert() {
+            if (
+              address1.value === "" ||
+              city.value === "" ||
+              zip.value === "" ||
+              region.value === "" ||
+              zip.value === "" ||
+              expiry.value === "" ||
+              card.value === "" ||
+              security.value === "" ||
+              holder.value === ""
+            ) {
+              alert("Please fill out all the required fields");
+            } else {
+              alert("Your Order Has Been Successfully Placed!");
+            }
+          }
+        </script>
+      </section>
+      <!-- References-->
+      <div class="footer">
+        <br />
+        <p>References</p>
+        <a
+          href="https://wallpaperscraft.com/download/blur_texture_misted_139577/1920x1080"
+          style="color: burlywood"
+          class="aq"
+          ><u>Background Image</u></a
+        >
+        <br />
+        <a
+          href="https://getcssscan.com/css-buttons-examples"
+          style="color: burlywood"
+          class="aq"
+          ><u>Buttons</u></a
+        >
+      </div>
+    </div>
+    <a href="../EditorPage/pageeditor.html" style="color: aquamarine"
+      >Page Editor Link</a
+    >
+  </body>
+</html>

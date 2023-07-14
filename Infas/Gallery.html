@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Importing the CSS -->
+    <link rel="stylesheet" href="./CSS/content.css">
+    <link rel="stylesheet" href="./CSS/mystyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- Fixed table created to change themes -->
+    <table>
+        <tr>
+            <td class="theme1"></td>
+        </tr>
+        <tr>
+            <td class="theme2"></td>
+        </tr>
+        <tr>
+            <td class="theme3"></td>
+        </tr>
+        <tr>
+            <td class="theme4" style="padding: 2px;">Rand</td>
+        </tr>
+    </table>
+    <!-- JS Script imported to activate themes -->
+    <script src="./JS/script.js"></script>
+    <!-- Buttons created for font sizing-->
+    <div class="but">
+        <!-- initializing size and linking to JS-->
+        <button style="cursor: pointer;" onclick="increaseFontSize()">+ font</button>
+        <button style="cursor: pointer;"  onclick="decreaseFontSize()">- font</button>
+        <script src="script.js"></script>
+    </div>
+    <!-- Common Navbar -->
+    <div class="container2">
+        <div class="container" >
+            <nav class="nav-bar">
+                <div class="logo-container">
+                    <div class="logo">GEARS</div>
+                </div>
+                <ul class="links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../Dulran/ProductsPage/buyproducts.html">Shop</a></li>
+                    <li><a href="Sitemap.html">SiteMap</a></li>
+                    <li><a href="../Nethma/CommentsPage/comments.html">Comments</a></li>
+                    <li><a href="../Chanditha/QuizPage/index.html">Quiz</a></li>
+                    <li><a href="Gallery.html">Gallery</a></li>
+                    <li><a href="../Chanditha/AboutUsPage/about.html">About Us</a></li> 
+                </ul>
+                <p id="menu" class="hamburger">&#9776;</p>
+            </nav>
+        </div>
+      </div>
+      <!-- New section created for the gallery page, original CSS was modified to adapt to changes such as themes etc. -->
+    <div class="outer-contmod">
+        <h1 class="h1">Upcoming Games</h1>
+        <div class="inner-contmod">
+            <div class="mycont">
+                <!-- Flex-container was used to display the main images-->
+                <div class="flex-container">
+                    <!-- For each image, DIV was used to seperate them horizaontally -->
+                    <div>
+                        <!-- JS was added to img tag to display when called-->
+                        <img class="img2" src="./Images/ARK2e.jpg" alt="Image" onmouseover="showImage('./Images/ARK2.jpg', 'Survive the past. Tame the future. Suddenly awakened on a primal world filled with dinosaurs and humans struggling for dominance, you must team-up with legendary heroes to confront powerful dark forces. Saddle up, and join the definitive next-gen survival experience with ARK 2!')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/CitiesSkylinesIIe.jpg" alt="Image" onmouseover="showImage('./Images/CitiesSkylinesII.jpg','Create and manage your own city without restrictions. Offering a deep simulation and a living economy, Cities: Skylines II will challenge your decision-making skills and allow you to build the cities of your dreams. Get ready for a new epic scale in the most realistic city builder - ever.')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/companyofheroese.jpg" alt="Image" onmouseover="showImage('./Images/companyofheroes.jpg', 'Bigger and better than ever, Company of Heroes 3 combines heart-pounding combat with deeper strategic choices in a stunning Mediterranean theatre of war. ​In Company of Heroes 3, every battle tells a story...whats yours?')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/destiny2lightfalle.jpeg" alt="Image" onmouseover="showImage('./Images/destiny2lightfall.png', 'The last stand against Calus--who became the latest disciple of The Witness at the end of Season of the Haunted--and a pivotal moment for the Destiny franchise as it heads to the end of the Light and Darkness saga. Lightfall takes place in a new city on Neptune, Neomuna, which has a pristine and retro-futuristic design.')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/ghostoftabore.jpg" alt="Image" onmouseover="showImage('./Images/ghostoftabor.jpg','Ghosts of Tabor is VRs only FPS PVP and PVE survival game where you will use your wits, skills and resources to survive. Inspired by games such as Escape from Tarkov and DayZ, featuring different scenarios from scavenging to looting and crafting. Will you survive long enough to make it out alive?')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/horizoncallofthemountaine.png" alt="Image" onmouseover="showImage('./Images/horizoncallofthemountain.png', 'A brand-new Horizon adventure currently in development at Guerrilla and Firesprite for PlayStation VR2, this unique experience has been designed to push hardware technology, innovation and gameplay. The stunning visuals and brand-new PS VR2 Sense controllers give a new meaning to being fully immersed into the world of Horizon.')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/PAYDAY3e.jpg" alt="Image" onmouseover="showImage('./Images/PAYDAY3.jpg','PAYDAY 3 is the much anticipated sequel to one of the most popular co-op shooters ever. Since its release, PAYDAY-players have been reveling in the thrill of a perfectly planned and executed heist. That’s what makes PAYDAY a high-octane, co-op FPS experience without equal.')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/RobinHoodSherwoodBuilderse.jpg" alt="Image" onmouseover="showImage('./Images/RobinHoodSherwoodBuilders.jpg','Robin Hood - Sherwood Builders is an action adventure RPG with city-building elements, where we will take the role of a classic hero, who fights against the tyranny and injustice that haunts Sherwood. As Robin, we’ll fight, hunt, craft, steal, and of course - help the local community grow in spite of the Sheriff of Nottingham’s regime – all within an open world environment that can be freely explored.')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/S.T.A.L.K.E.R.2HeartofChornobyle.jpeg" alt="Image" onmouseover="showImage('./Images/S.T.A.L.K.E.R.2HeartofChornobyl.jpeg','Discover the vast Chornobyl Exclusion Zone full of dangerous enemies, deadly anomalies and powerful artifacts. Unveil your own epic story as you make your way to the Heart of Chornobyl. Make your choices wisely, as they will determine your fate in the end.')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/sonsoftheforeste.jpg" alt="Image" onmouseover="showImage('./Images/sonsoftheforest.jpg', 'An entirely new experience from the makers of the The Forest. Sent to find a missing billionaire on a remote island, you find yourself in a cannibal-infested hellscape. Craft, build, and struggle to survive, alone or with friends, in this terrifying new open-world survival horror simulator.')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/STARWARSJediSurvivore.jpg" alt="Image" onmouseover="showImage('./Images/STARWARSJediSurvivor.jpg','The story of Cal Kestis continues in Star Wars Jedi: Survivor™, a third-person, galaxy-spanning, action-adventure game from Respawn Entertainment, developed in collaboration with Lucasfilm Games. This narratively driven, single-player title picks up 5 years after the events of Star Wars Jedi: Fallen Order™ and follows Cal’s increasingly desperate fight as the galaxy descends further into darkness. Pushed to the edges of the galaxy by the Empire, Cal will find himself surrounded by threats new and familiar. As one of the last surviving Jedi Knights, Cal is driven to make a stand during the galaxy’s darkest times — but how far is he willing to go to protect himself, his crew, and the legacy of the Jedi Order?')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/TheLastofUse.jpg" alt="Image" onmouseover="showImage('./Images/TheLastofUs.jpg','Experience the emotional storytelling and unforgettable characters in The Last of Us™, winner of over 200 Game of the Year awards. In a ravaged civilization, where infected and hardened survivors run rampant, Joel, a weary protagonist, is hired to smuggle 14-year-old Ellie out of a military quarantine zone. However, what starts as a small job soon transforms into a brutal cross-country journey.')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/TheWalkingDeadSaints&Sinnerse.jpg" alt="Image" onmouseover="showImage('./Images/TheWalkingDeadSaints&Sinners.jpg','Hunted by the seemingly unstoppable Axeman and facing off against the Tower’s latest push for total dominance, discover what connects these new threats together before it’s too late. New faces, places, weapons and gear all await you on your journey to a final showdown for the citys fate.')">
+                    </div>
+                    <div>
+                        <img class="img2" src="./Images/wwe2k23e.jpg" alt="Image" onmouseover="showImage('./Images/wwe2k23.jpg', 'Expanded features, gorgeous graphics, and the ultimate WWE experience. Hit the ring with a deep roster of WWE Superstars and Legends including Roman Reigns, American Nightmare Cody Rhodes, Ronda Rousey, Brock Lesnar, Stone Cold Steve Austin and more!')">
+                    </div>
+                </div>
+                <!-- Panel is a section created to display image and description below the Flex-container-->
+                <div class="panel">
+                    <!-- 2 Sections were created for easy horizontal alignment -->
+                    <div class="panelimg">
+                        <img id="Nimage" src="" alt="image">
+                    </div>
+                    <div class="panelp">
+                        <p id="description"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="myfooter">
+                <a href="Page_Editor.html">Link to Page Editor</a>
+            </div>
+        </div>
+    </div>
+    <!-- Common JS Script for NavBar and Responsiveness -->
+    <script>
+
+        let hamburger = document.querySelector("#menu");
+        let linkList = document.querySelector(".links");
+    
+        hamburger.addEventListener("click", () => {
+    
+            linkList.classList.toggle("shown");
+    
+        })
+    
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+@import url(boilerplate.css);
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    height: 80vh;
+}
+
+.splash-container {
+    position: relative;
+    left: 50%;
+}
+
+.aside {
+    animation: moveLeft 1s;
+    left: 0%;
+}
+
+#splash-images {
+    position: relative;
+    animation: fadeIn 1s;
+    width: 40vw;
+}
+
+.text-logo {
+    position: absolute;
+    left: 0%;
+    animation: fadeIn 1s;
+    width: 40vw;
+    z-index: 1;
+}
+
+.credits-container {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.appear {
+    animation: fadeIn 1s;
+}
+
+h2 {
+    font-size: 3vw;
+}
+
+p {
+    font-size: 1.5vw;
+    margin: 3px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+@keyframes moveLeft {
+    0% { left: 50%; }
+    100% { left: 0%; }
+  }

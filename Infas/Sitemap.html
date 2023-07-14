@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sitemap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Importing the CSS -->
+    <link rel="stylesheet" href="./CSS/content.css">
+    <link rel="stylesheet" href="./CSS/mystyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <!-- Common Navbar -->
+  <div class="container2">
+    <div class="container" >
+      <nav class="nav-bar">
+        <div class="logo-container">
+            <div class="logo">GEARS</div>
+        </div>
+        <ul class="links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Dulran/ProductsPage/buyproducts.html">Shop</a></li>
+            <li><a href="Sitemap.html">SiteMap</a></li>
+            <li><a href="../Nethma/CommentsPage/comments.html">Comments</a></li>
+            <li><a href="../Chanditha/QuizPage/index.html">Quiz</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="../Chanditha/AboutUsPage/about.html">About Us</a></li> 
+        </ul>
+        <p id="menu" class="hamburger">&#9776;</p>
+    </nav>
+    </div>
+  </div>
+  <!-- Original CSS modified to adapt to SVG -->
+  <div class=".outer-contmod-svg">
+    <h1 class="h1">Site Map</h1>
+    <!-- Section created to help aligh, place and fit all SVG elements -->
+    <div class="inner-cont-svg" style="background-image: url(./Images/CoD.jpg)">
+        <div class="mycont">
+          <!-- Each element was precisely placed and sized, responsive too-->
+          <svg width="90%" height="29vw">
+            <!-- Links were added to each element-->
+            <a href="../index.html">
+              <circle cx="50%" cy="30%" r="6%"/>
+              <text x="50%" y="31%" font-size="100%" text-anchor="middle">Home</text>
+            </a>
+            <a href="../Dulran/ProductsPage/buyproducts.html">
+              <circle cx="10%" cy="70%" r="6%" />
+              <text x="10%" y="71%" font-size="100%" text-anchor="middle">Shop</text>
+            </a>
+            <a href="Sitemap.html">
+              <circle cx="26%" cy="70%" r="6%" />
+              <text x="26%" y="71%" font-size="100%" text-anchor="middle">SiteMap</text>
+            </a>
+            <a href="../Nethma/CommentsPage/comments.html">
+              <circle cx="42%" cy="70%" r="6%" />
+              <text x="42%" y="71%" font-size="95%" text-anchor="middle">Comments</text>
+            </a>
+            <a href="../Chanditha/QuizPage/index.html">
+              <circle cx="58%" cy="70%" r="6%" />
+              <text x="58%" y="71%" font-size="100%" text-anchor="middle">Quiz</text>
+            </a>
+            <a href="Gallery.html">
+              <circle cx="74%" cy="70%" r="6%" />
+              <text x="74%" y="71%" font-size="100%" text-anchor="middle">Gallery</text>
+            </a>                    
+            <a href="../Chanditha/AboutUsPage/about.html">
+              <circle cx="90%" cy="70%" r="6%" />
+              <text x="90%" y="71%" font-size="100%" text-anchor="middle">About Us</text>
+            </a>                            
+            <line x1="50%" y1="41%" x2="50%" y2="50%" stroke="#282634" />
+            <line x1="10%" y1="50%" x2="90%" y2="50%" stroke="#282634" />
+            <line x1="10%" y1="50%" x2="10%" y2="59%" stroke="#282634" />
+            <line x1="26%" y1="50%" x2="26%" y2="59%" stroke="#282634" />
+            <line x1="42%" y1="50%" x2="42%" y2="59%" stroke="#282634" />
+            <line x1="58%" y1="50%" x2="58%" y2="59%" stroke="#282634" />
+            <line x1="74%" y1="50%" x2="74%" y2="59%" stroke="#282634" />
+            <line x1="90%" y1="50%" x2="90%" y2="59%" stroke="#282634" />
+          </svg>
+        </div>
+        <div class="myfooter">
+            <a href="Page_Editor.html">Link to Page Editor</a>
+        </div>
+    </div>
+  </div>
+  <!-- Common JS Script for NavBar and Responsiveness-->
+  <script>
+
+    let hamburger = document.querySelector("#menu");
+    let linkList = document.querySelector(".links");
+
+    hamburger.addEventListener("click", () => {
+
+        linkList.classList.toggle("shown");
+
+    })
+
+</script>
+    
+</body>
+</html>

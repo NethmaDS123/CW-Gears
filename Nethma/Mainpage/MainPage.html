@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../Mainpage/styles.css">
+</head>
+<body>
+     <!-- Create a container for the navigation bar -->
+    <div class="container1">
+        <nav class="nav-bar">
+            <!-- Create a container for the logo -->
+            <div class="logo-container">
+                <!-- Create the logo text -->
+                <div class="logo">GEARS</div>
+            </div>
+            <!-- Create an unordered list of navigation links -->
+            <ul class="links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Dulran/ProductsPage/buyproducts.html">Shop</a></li>
+                <li><a href="../../Infas/Sitemap.html">SiteMap</a></li>
+                <li><a href="../CommentsPage/comments.html">Comments</a></li>
+                <li><a href="../../Chanditha/QuizPage/index.html">Quiz</a></li>
+                <li><a href="../../Infas/Gallery.html">Gallery</a></li>
+                <li><a href="../../Chanditha/AboutUsPage/about.html">About Us</a></li> 
+            </ul>
+             <!-- Create a hamburger menu button for mobile devices -->
+            <p id="menu" class="hamburger">&#9776;</p>
+        </nav>
+    </div>
+    <!-- Create a container for the list of games -->
+        <div class="container2">
+            <h1 class="Gamesheader">Games</h1>
+          <div class="Games">
+             <!-- Create an image and link to a game -->
+            <img class="batmanimage" src="../Assets/490809.jpeg" alt="">
+                 <h2><a class="game1" href="../ContentPage/batman.html">Batman Arkham Knight</a></h2>
+                  <!-- Create an image and link to a game -->
+            <img class="Eldenring" src="../Assets/eldenring.jpg" alt="">   
+                 <h2><a class="game2" href="../../Chanditha/ContentPage/content-std-three.html">Elden Ring</a></h2> 
+                  <!-- Create an image and link to a game -->
+            <img class="Fortnite" src="../Assets/fortnite.jpg" alt="">
+                 <h2><a class="game3" href="../../Dulran/ContentPage/fortnite.html">Fortnite</a></h2> 
+                  <!-- Create an image and link to a game -->
+            <img class="GTA5" src="../Assets/gta.jpg" alt="">   
+                 <h2><a class="game4" href="../../Infas/GTAV.html">Grand theft auto 5</a></h2> 
+          </div>
+        </div>
+        <footer>
+             <!--Footer has the link to the developers page editor site -->
+            <h2><a class="Pageeditor" href="../DevelopersSite/pageeditor.html">Nethma De Silva Page Editor Link</a></h2> 
+             <!-- Section with references to all the images downloaded -->
+            <div id="refs" class="section">
+                <h1>REFERENCES</h1>
+                
+            <div class="text-container" id="refs_container">
+                <a href="https://wallpapercave.com/w/wp1835392">Batman Image Link</a>
+                <a href="https://wallpapercave.com/w/wp10826394">Eldenring Image Link</a>
+                <a href="https://www.peakpx.com/en/hd-wallpaper-desktop-auibg">Fortnite Image Link</a>
+                <a href="https://wall.alphacoders.com/big.php?i=421641">GTA5 Image Link</a>
+               
+            </div>          
+            
+                </div>
+            </footer>
+    <script>
+         // Select the hamburger menu button and the element containing the navigation links
+        let hamburger = document.querySelector("#menu");
+        let linkList = document.querySelector(".links");
+        // Add an event listener to the hamburger menu button
+        hamburger.addEventListener("click", () => {
+            // When the button is clicked, toggle the "shown" class on the navigation links element
+            linkList.classList.toggle("shown");
+    
+        })
+    
+    </script>
+    
+</body>
+</html>

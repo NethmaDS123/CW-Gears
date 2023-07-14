@@ -1,0 +1,140 @@
+@import url(./boilerplate.css);
+
+.quiz-section {
+    align-self: center;
+}
+
+.quiz-topic {
+    text-align: center;
+    color: var(--font-color);
+    font-size: 2.5rem;
+}
+
+.quiz-container {
+    background-color: var(--primary-color);
+    margin: 40px;
+    padding: 50px;
+    border-radius: 25px;
+    max-width: 800px;
+}
+
+.quiz-container > * {
+    color: var(--font-color);
+    margin: 25px;
+}
+
+.quiz-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz-top {
+    font-size: 1.5rem;
+}
+
+.quiz-question-container {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.quiz-answers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.answer-option {
+    color: var(--font-color);
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-color: var(--font-color);
+    border-radius: 25px;
+    padding: 7.5px;
+}
+
+.answer-option:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: var(--font-color);
+}
+
+.correct {
+    background-color: rgb(1, 116, 1);
+}
+
+.wrong {
+    background-color: rgb(139, 2, 2);
+}
+
+.answered {
+    pointer-events: none;
+}
+
+.quiz-bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quiz-next-btn {
+    font-size: 1.75rem;
+    background-color: transparent;
+    padding: 10px;
+    color: var(--font-color);
+    border-color: var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+.quiz-next-btn:hover {
+    cursor: pointer;
+}
+
+.info-sheet {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 25px;
+    min-height: 600px;
+}
+
+.info-sheet strong {
+    color: var(--secondary-color);
+}
+
+.info-sheet h2 {
+    text-transform: uppercase;
+}
+
+.hide {
+    display: none;
+}
+
+.quiz-time-taken {
+    color: var(--secondary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin-top: 40px;
+    padding: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+    
+
+@media only screen and (max-width: 1000px) {
+    .quiz-answers-container {
+        grid-template-columns: 1fr;
+    }
+}

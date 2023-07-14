@@ -1,0 +1,66 @@
+@import url(../CommonCSS/boilerplate.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 150vh;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+
+}
+.form1{
+    width: 100%;
+    height: fit-content; 
+    padding: 20px;
+    border: solid;
+    margin-bottom: 50px;
+}
+
+.form2{
+    width: 100%;
+    height: fit-content; 
+    padding: 20px;
+    border: solid;
+    margin-bottom: 50px;
+}
+
+.form3{
+    width: 100%;
+    height: fit-content; 
+    padding: 20px;
+    border: solid;
+    margin-bottom: 50px;
+}
+
+.form4{
+    width: 100%;
+    height: fit-content; 
+    padding: 20px;
+    border: solid;
+    margin-bottom: 50px;
+}
+
+.nav-bar {
+    background-color: var(--primary-color);
+}
+
+
+button{
+    padding: 10px 20px;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    margin-top: 50px;
+    color: white;
+
+}

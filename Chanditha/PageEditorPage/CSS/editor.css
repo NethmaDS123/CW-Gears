@@ -1,0 +1,38 @@
+
+
+* {
+    font-family:'Poppins', serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: #e2c2c6;
+}
+
+body {
+    background-color: #2f0147;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+#details {
+    margin-top: 10px;
+}
+
+#details h3 {
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+    background-color: #220134;
+}

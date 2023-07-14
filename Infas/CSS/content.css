@@ -1,0 +1,50 @@
+@import url(boilerplate.css);
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary-color);
+    margin-top: 40px;
+    padding: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.display-img {
+    max-width: 600px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.anchors {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 0px;
+    margin: 20px;
+}
+
+.anchors li {
+    margin-right: 40px;
+    font-size: 1.25rem;
+}
+
+.anchors li a {
+    color: var(--font-color);
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}

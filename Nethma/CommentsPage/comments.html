@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link tag to load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="comments.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Navigation bar for the website -->
+                <nav class="nav-bar">
+                     <!-- Logo container for the website -->
+                    <div class="logo-container">
+                        <!-- Website logo -->
+                        <div class="logo">GEARS</div>
+                    </div>
+                     <!-- List of links to different pages on the website -->
+                    <ul class="links">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../Dulran/ProductsPage/buyproducts.html">Shop</a></li>
+                        <li><a href="../../Infas/Sitemap.html">SiteMap</a></li>
+                        <li><a href="../CommentsPage/comments.html">Comments</a></li>
+                        <li><a href="../../Chanditha/QuizPage/index.html">Quiz</a></li>
+                        <li><a href="../../Infas/Gallery.html">Gallery</a></li>
+                        <li><a href="../../Chanditha/AboutUsPage/about.html">About Us</a></li> 
+                    </ul>
+                    <!-- Hamburger icon to toggle the visibility of the navigation links on smaller screens -->
+                    <p id="menu" class="hamburger">&#9776;</p>
+                </nav>
+     <!-- Container for the feedback form -->
+    <div class="container">
+         <!-- Feedback form with a "POST" method to submit the data to Formspree -->
+        <form class="form" action="https://formspree.io/f/mrgvypoa" method="POST"> 
+            <!-- Radio button group to rate the website -->
+            <div class="form1">
+                <p>How satisfied were you with our website? Rate from 0 - 10</p>
+                <input type="radio" id="1" name="Rating" value="1" required>
+                <label for="1">1</label><br>
+                <input type="radio" id="2" name="Rating" value="2" required>
+                <label for="2">2</label><br>
+                <input type="radio" id="3" name="Rating" value="3" required>
+                <label for="3">3</label><br>
+                <input type="radio" id="4" name="Rating" value="4" required>
+                <label for="4">4</label><br>
+                <input type="radio" id="5" name="Rating" value="5" required>
+                <label for="5">5</label><br>
+                <input type="radio" id="6" name="Rating" value="6" required>
+                <label for="6">6</label><br>
+                <input type="radio" id="7" name="Rating" value="7" required>
+                <label for="7">7</label><br>
+                <input type="radio" id="8" name="Rating" value="8" required>
+                <label for="8">8</label><br>
+                <input type="radio" id="9" name="Rating" value="9" required>
+                <label for="9">9</label><br>
+                <input type="radio" id="10" name="Rating" value="10" required>
+                <label for="10">10</label><br>
+            </div>
+             <!--Form containing a textarea element where the user can enter reasons behind the given rating in the text box-->
+            <div class="form2">
+                <p>Please could you tell us your reasons for this rating?</p>
+                <textarea id="message" name="Reasons for this rating" rows="4" cols="100" required></textarea>
+            </div>
+             <!--form for the user to select the method the task was completed-->
+            <div class="form3">
+                <p>How did you want to complete this task today?</p>
+                <!-- This select element creates a dropdown list for the user to choose from -->
+                <select id="options1" name="Task completion method" required>
+                    <option value="">Choose an option</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Website">Website</option>
+                    <option value="Webchat">Webchat</option>
+                    <option value="Social media">Social media</option>
+                    <option value="Email">Email</option>
+                </select>
+            </div>
+            <!--form for the user to select the method the task will be  completed if they redid it-->
+            <div class="form4">
+                <!-- This select element creates a dropdown list for the user to choose from -->
+                <p>If you had to complete this task again how would you do it?</p>
+                <select id="options2" name="Preferred task completion method" required>
+                    <option value="">Choose an option</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Website">Website</option>
+                    <option value="Webchat">Webchat</option>
+                    <option value="Social media">Social media</option>
+                    <option value="Email">Email</option>
+                </select>
+            </div>
+                <button>Submit</button>
+
+        </form>
+        <!--Footer has the link to the developers page editor site -->
+        <footer>
+            <h2><a class="Pageeditor" href="../DevelopersSite/pageeditor.html">Nethma De Silva Page Editor Link</a></h2> 
+        </footer>
+    
+    <script>
+        // Select the hamburger menu button and the element containing the navigation links
+        let hamburger = document.querySelector("#menu");
+        let linkList = document.querySelector(".links");
+       // Add an event listener to the hamburger menu button
+        hamburger.addEventListener("click", () => {
+          // When the button is clicked, toggle the "shown" class on the navigation links element
+            linkList.classList.toggle("shown");
+    
+        })
+    
+    </script>
+    </div>
+</body>
+</html>
